@@ -1,22 +1,23 @@
 class Animal {
-  constructor(nama, usia) {
-    this.name = nama;
-    this.age = usia;
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
   }
 
   greet() {
     console.log("Halo");
   }
 
-  // Tambahkan method info
   info() {
+    // Panggil method greet
+    this.greet();
+
     console.log(`Nama saya adalah ${this.name}`);
-    console.log(`Saya berusia ${this.age} tahun`);
+    console.log(`Saya berumur ${this.age} tahun`);
   }
 }
 
 const animal = new Animal("Leo", 3);
-animal.greet();
+// Hapus baris dibawah
 
-// Panggil method info menggunakan constant animal
 animal.info();
