@@ -16,10 +16,17 @@ class Animal {
 }
 
 class Dog extends Animal {
+  // Tambahkan method getHumanAge
+  getHumanAge() {
+    return this.age * 7;
+  }
 }
 
-// Terapkan instance class Dog ke constant dog
 const dog = new Dog("Leo", 4);
-
-// Panggil method info dari constant dog
 dog.info();
+
+// Panggil method getHumanAge milik instance dog
+const humanAge = dog.getHumanAge();
+
+// Print 「Saya berusia __ tahun dalam umur manusia」
+console.log(`Saya berusia ${humanAge} tahun dalam umur manusia`);
