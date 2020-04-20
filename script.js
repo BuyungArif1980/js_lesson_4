@@ -11,13 +11,15 @@ class Animal {
   info() {
     this.greet();
     console.log(`Nama saya adalah ${this.name}`);
-    console.log(`Saya berumur ${this.age} tahun`);
+    console.log(`Saya berusia ${this.age} tahun`);
   }
 }
 
-// Definisikan class Dog agar dapat menerima warisan dari class Animal
 class Dog extends Animal {
 }
 
-const animal = new Animal("Leo", 3);
-animal.info();
+// Terapkan instance class Dog ke constant dog
+const dog = new Dog("Leo", 4);
+
+// Panggil method info dari constant dog
+dog.info();
