@@ -1,8 +1,8 @@
 class Animal {
+  // Tambahkan constructor
+  constructor() {
+    console.log("Membuat instance baru");
+  }
 }
 
-// Tetapkan instance class Animal ke constant animal
 const animal = new Animal();
-
-// Tampilkan nilai milik constant animal
-console.log(animal);
