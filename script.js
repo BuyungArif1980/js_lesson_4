@@ -16,7 +16,16 @@ class Animal {
 }
 
 class Dog extends Animal {
-  // Tambahkan method getHumanAge
+  // Tambahkan method info
+  info() {
+    this.greet();
+    console.log(`Nama saya adalah ${this.name}`);
+    console.log(`Saya berusia ${this.age} tahun`);
+
+    const humanAge = this.getHumanAge();
+    console.log(`Saya berusia ${humanAge} tahun dalam umur manusia`);
+  }
+
   getHumanAge() {
     return this.age * 7;
   }
@@ -24,9 +33,3 @@ class Dog extends Animal {
 
 const dog = new Dog("Leo", 4);
 dog.info();
-
-// Panggil method getHumanAge milik instance dog
-const humanAge = dog.getHumanAge();
-
-// Print 「Saya berusia __ tahun dalam umur manusia」
-console.log(`Saya berusia ${humanAge} tahun dalam umur manusia`);
