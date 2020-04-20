@@ -1,17 +1,16 @@
 class Animal {
-  constructor() {
-    // Tetapkan nilai string「Leo」ke property name
-    this.name = "Leo";
+  // Tambahkan argument「name」dan「age」
+  constructor(name, age) {
+    // Gantikan nilai string "Leo" dengan nilai milik argument name
+    this.name = name;
 
-    // Tetapkan nilai「3」ke property age
-    this.age = 3;
+    // Gantikan「3」dengan nilai milik argument age
+    this.age = age;
   }
 }
 
-const animal = new Animal();
+// Teruskan argument「"Mocha"」「8」ke constant animal dibawah
+const animal = new Animal("Mocha", 8);
 
-// Print「Nama: ____」
 console.log(`Nama: ${animal.name}`);
-
-// Print「Usia: __」
 console.log(`Usia: ${animal.age}`);
